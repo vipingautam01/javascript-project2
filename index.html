@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User details list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Filter ui cards via their profession.</h2>
+    <div class="form-container">
+      <div class="form-group" style="display: block;">
+        <select id="profession">
+          <option value="">Profession</option>
+          <option value="developer">Developer</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
 
+      <h4 id="head">Add new user</h4>
+        <div class="form-group1">
+            <label for="name" id="lab1">Enter Name</label>
+            <label for="age" id="lab2">Enter Age</label>
+            <label for="profession-add" id="lab3">Entrer Profession</label>
+            <input type="text" id="name" />
+            <input type="number" id="age"/>
+            <input type="text" id="profession-add" />
+        </div>
+        <button id="add-btn">Add User</button>
+      
+    </div>
+    <div id="user-show-list"></div>
+    <button id="filter-btn">Filter</button>
+    <script src="script.js"></script>
+  </body>
+</html>
